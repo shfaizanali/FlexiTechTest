@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-nav-title align-title="center" >
+        Post
+        <div style="float:right;font-size: 27px;">
+            <a href="#add-post"><i class="ion-plus"></i></a>
+            <i class="ion-trash-a" ng-click="deletePost()"></i>
+        </div>
+    </ion-nav-title>
+
+    <ion-content >
+            <div class="list card">
+                <div class="item item-divider">
+                    {{post.title}}
+                </div>
+
+                <div class="item item-text-wrap">
+                    {{post.body}}
+                </div>
+            </div>
+    </ion-content>
+</ion-view>
